@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{b99b261c-30cf-412c-9348-2108fe5c6137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Structures">
+      <UniqueIdentifier>{70c1320b-9122-441a-9387-f597b37a7772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Expression">
+      <UniqueIdentifier>{48bd5211-6c9e-49f4-a5f5-02967c4aded1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Expression">
+      <UniqueIdentifier>{597bcb6f-9ab6-499a-aa58-2397322f7389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Structures">
+      <UniqueIdentifier>{944427a7-5fe0-4f4b-9ca7-5f855edec0e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Interfaces">
+      <UniqueIdentifier>{9ad2443a-ebeb-4a9b-a417-932c48f4262c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Node.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayQueue.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayStack.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListQueue.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListStack.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceQueue.h">
+      <Filter>헤더 파일\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceStack.h">
+      <Filter>헤더 파일\Interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayQueue.cpp">
+      <Filter>소스 파일\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayStack.cpp">
+      <Filter>소스 파일\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedListQueue.cpp">
+      <Filter>소스 파일\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedListStack.cpp">
+      <Filter>소스 파일\Structures</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
