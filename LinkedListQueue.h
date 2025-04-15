@@ -5,16 +5,17 @@
 class LinkedListQueue : public InterfaceQueue
 {
 public:
-	LinkedListQueue(int size);
+	LinkedListQueue();
 	~LinkedListQueue();
 
 	bool isEmpty() override;
-	bool isFull() override;
-	void enqueue(int item) override;
-	int dequeue() override;
+	void enqueue(std::string item) override;
+	std::string dequeue() override;
 	void print() override;
+	std::string peekFront() override;
+	std::string peekSecond() override;
 
 private:
-	Node* head_;
-	Node* tail_;
+	Node* front_;
+	Node* rear_;
 };

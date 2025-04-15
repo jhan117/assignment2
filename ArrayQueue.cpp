@@ -1,15 +1,14 @@
-#include <iostream>
 #include "ArrayQueue.h"
 using namespace std;
 
 // 생성자, 소멸자
-ArrayQueue::ArrayQueue(int size): front_(-1), rear_(-1), queue_size_(size){}
+ArrayQueue::ArrayQueue(int size) : front_(-1), rear_(-1), queue_size_(size) { queue_ = new string[queue_size_]; }
 ArrayQueue::~ArrayQueue() { delete[] queue_; }
 
 // 멤버 메소드
 bool ArrayQueue::isEmpty() { return front_ == rear_; }
 bool ArrayQueue::isFull() { return front_ == (rear_ + 1) % queue_size_; }
-void ArrayQueue::enqueue(int item)
+void ArrayQueue::enqueue(string item)
 {
 	if (isFull())
 	{
@@ -19,15 +18,16 @@ void ArrayQueue::enqueue(int item)
 	rear_ = (rear_ + 1) % queue_size_;
 	queue_[rear_] = item;
 }
-int ArrayQueue::dequeue()
+string ArrayQueue::dequeue()
 {
 	if (isEmpty())
 	{
 		cout << "큐 비어있어서 dequeue 불가..." << endl;
-		return NULL;
+		return "";
 	}
 	front_ = (front_ + 1) % queue_size_;
-	return queue_[front_];
+	string item = queue_[front_];
+	return item;
 }
 void ArrayQueue::print()
 {
@@ -46,4 +46,16 @@ void ArrayQueue::print()
 		idx = (idx + 1 % queue_size_);
 	}
 	cout << endl;
+}
+string ArrayQueue::peekFront()
+{
+	if (isEmpty()) return "";
+	return queue_[(front_ + 1) % queue_size_];
+}
+string ArrayQueue::peekSecond()
+{
+	int first = (front_ + 1) % queue_size_;
+	int secondIdx = (first + 1) % queue_size_;
+	if (isEmpty() || first == rear_) return "";
+	return queue_[secondIdx];
 }

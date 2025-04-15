@@ -9,12 +9,13 @@ public:
 
 	bool isEmpty() override;
 	bool isFull() override;
-	void push(int item) override;
-	int pop() override;
+	void push(std::string item) override;
+	std::string pop() override;
 	void print() override;
+	std::string peek() override;
 
 private:
-	int* stack_;
+	std::string* stack_;
 	int top_;
 	int stack_size_;
 };

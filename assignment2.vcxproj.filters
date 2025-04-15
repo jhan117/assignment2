@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Main">
-      <UniqueIdentifier>{b99b261c-30cf-412c-9348-2108fe5c6137}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\Structures">
       <UniqueIdentifier>{70c1320b-9122-441a-9387-f597b37a7772}</UniqueIdentifier>
     </Filter>
@@ -31,33 +28,28 @@
     <Filter Include="헤더 파일\Interfaces">
       <UniqueIdentifier>{9ad2443a-ebeb-4a9b-a417-932c48f4262c}</UniqueIdentifier>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Node.h">
-      <Filter>헤더 파일\Structures</Filter>
-    </ClInclude>
-    <ClInclude Include="ArrayQueue.h">
-      <Filter>헤더 파일\Structures</Filter>
-    </ClInclude>
-    <ClInclude Include="ArrayStack.h">
-      <Filter>헤더 파일\Structures</Filter>
-    </ClInclude>
-    <ClInclude Include="LinkedListQueue.h">
-      <Filter>헤더 파일\Structures</Filter>
-    </ClInclude>
-    <ClInclude Include="LinkedListStack.h">
-      <Filter>헤더 파일\Structures</Filter>
-    </ClInclude>
-    <ClInclude Include="InterfaceQueue.h">
-      <Filter>헤더 파일\Interfaces</Filter>
-    </ClInclude>
-    <ClInclude Include="InterfaceStack.h">
-      <Filter>헤더 파일\Interfaces</Filter>
-    </ClInclude>
+    <Filter Include="소스 파일\Main">
+      <UniqueIdentifier>{b99b261c-30cf-412c-9348-2108fe5c6137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Test">
+      <UniqueIdentifier>{8817524b-c184-4898-be3c-8ec37e43ffdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Test">
+      <UniqueIdentifier>{f117cc8f-1ec1-496f-8947-6bb549a4a83d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Main</Filter>
+      <Filter>소스 파일\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpressionEvaluator.cpp">
+      <Filter>소스 파일\Expression</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpressionParser.cpp">
+      <Filter>소스 파일\Expression</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpressionTree.cpp">
+      <Filter>소스 파일\Expression</Filter>
     </ClCompile>
     <ClCompile Include="ArrayQueue.cpp">
       <Filter>소스 파일\Structures</Filter>
@@ -71,5 +63,55 @@
     <ClCompile Include="LinkedListStack.cpp">
       <Filter>소스 파일\Structures</Filter>
     </ClCompile>
+    <ClCompile Include="test_eval_prefix.cpp">
+      <Filter>소스 파일\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_eval_postfix.cpp">
+      <Filter>소스 파일\Test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Expression.h">
+      <Filter>헤더 파일\Expression</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressionEvaluator.h">
+      <Filter>헤더 파일\Expression</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressionParser.h">
+      <Filter>헤더 파일\Expression</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressionTree.h">
+      <Filter>헤더 파일\Expression</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceQueue.h">
+      <Filter>헤더 파일\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceStack.h">
+      <Filter>헤더 파일\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayQueue.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayStack.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListQueue.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedListStack.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>헤더 파일\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>헤더 파일\Test</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

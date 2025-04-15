@@ -9,12 +9,14 @@ public:
 
 	bool isEmpty() override;
 	bool isFull() override;
-	void enqueue(int item) override;
-	int dequeue() override;
+	void enqueue(std::string item) override;
+	std::string dequeue() override;
 	void print() override;
+	std::string peekFront() override;
+	std::string peekSecond() override;
 
 private:
-	int* queue_;
+	std::string* queue_;
 	int front_, rear_;
 	int queue_size_;
 };

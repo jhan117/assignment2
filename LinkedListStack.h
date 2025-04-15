@@ -5,14 +5,14 @@
 class LinkedListStack : public InterfaceStack
 {
 public:
-	LinkedListStack(int size);
+	LinkedListStack();
 	~LinkedListStack();
 
 	bool isEmpty() override;
-	bool isFull() override;
-	void push(int item) override;
-	int pop() override;
+	void push(std::string item) override;
+	std::string pop() override;
 	void print() override;
+	std::string peek() override;
 
 private:
 	Node* top_;

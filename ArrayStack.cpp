@@ -1,15 +1,14 @@
-#include <iostream>
 #include "ArrayStack.h"
 using namespace std;
 
 // 생성자, 소멸자
-ArrayStack::ArrayStack(int size) : top_(-1), stack_size_(size) {}
+ArrayStack::ArrayStack(int size) : top_(-1), stack_size_(size) { stack_ = new string[stack_size_]; }
 ArrayStack::~ArrayStack() { delete[] stack_; }
 
 // 멤버 메소드
 bool ArrayStack::isEmpty() { return top_ == -1; }
 bool ArrayStack::isFull() { return top_ == (stack_size_ - 1); }
-void ArrayStack::push(int item)
+void ArrayStack::push(string item)
 {
 	if (isFull())
 	{
@@ -19,15 +18,16 @@ void ArrayStack::push(int item)
 	top_++;
 	stack_[top_] = item;
 }
-int ArrayStack::pop()
+string ArrayStack::pop()
 {
 	if (isEmpty())
 	{
 		cout << "스택 비어있어서 pop 불가..." << endl;
-		return NULL;
+		return "";
 	}
+	string item = stack_[top_];
 	top_--;
-	return stack_[top_];
+	return item;
 }
 void ArrayStack::print()
 {
@@ -43,4 +43,9 @@ void ArrayStack::print()
 	}
 
 	cout << endl;
+}
+string ArrayStack::peek()
+{
+	if (isEmpty()) return "";
+	return stack_[top_];
 }
