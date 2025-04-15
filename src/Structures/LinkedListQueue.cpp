@@ -1,4 +1,4 @@
-#include "LinkedListQueue.h"
+#include "Structures/LinkedListQueue.h"
 using namespace std;
 
 LinkedListQueue::LinkedListQueue(): front_(nullptr), rear_(nullptr) {}

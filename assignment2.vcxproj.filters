@@ -39,78 +39,78 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\Expression\ExpressionEvaluator.cpp">
+      <Filter>소스 파일\Expression</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Expression\ExpressionParser.cpp">
+      <Filter>소스 파일\Expression</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Expression\ExpressionTree.cpp">
+      <Filter>소스 파일\Expression</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
       <Filter>소스 파일\Main</Filter>
     </ClCompile>
-    <ClCompile Include="ExpressionEvaluator.cpp">
-      <Filter>소스 파일\Expression</Filter>
-    </ClCompile>
-    <ClCompile Include="ExpressionParser.cpp">
-      <Filter>소스 파일\Expression</Filter>
-    </ClCompile>
-    <ClCompile Include="ExpressionTree.cpp">
-      <Filter>소스 파일\Expression</Filter>
-    </ClCompile>
-    <ClCompile Include="ArrayQueue.cpp">
+    <ClCompile Include="src\Structures\ArrayQueue.cpp">
       <Filter>소스 파일\Structures</Filter>
     </ClCompile>
-    <ClCompile Include="ArrayStack.cpp">
+    <ClCompile Include="src\Structures\ArrayStack.cpp">
       <Filter>소스 파일\Structures</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedListQueue.cpp">
+    <ClCompile Include="src\Structures\LinkedListQueue.cpp">
       <Filter>소스 파일\Structures</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedListStack.cpp">
+    <ClCompile Include="src\Structures\LinkedListStack.cpp">
       <Filter>소스 파일\Structures</Filter>
     </ClCompile>
-    <ClCompile Include="test_eval_prefix.cpp">
+    <ClCompile Include="test\test_eval_postfix.cpp">
       <Filter>소스 파일\Test</Filter>
     </ClCompile>
-    <ClCompile Include="test_eval_postfix.cpp">
+    <ClCompile Include="test\test_eval_prefix.cpp">
       <Filter>소스 파일\Test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Expression.h">
+    <ClInclude Include="include\Expression\Expression.h">
       <Filter>헤더 파일\Expression</Filter>
     </ClInclude>
-    <ClInclude Include="ExpressionEvaluator.h">
+    <ClInclude Include="include\Expression\ExpressionEvaluator.h">
       <Filter>헤더 파일\Expression</Filter>
     </ClInclude>
-    <ClInclude Include="ExpressionParser.h">
+    <ClInclude Include="include\Expression\ExpressionParser.h">
       <Filter>헤더 파일\Expression</Filter>
     </ClInclude>
-    <ClInclude Include="ExpressionTree.h">
+    <ClInclude Include="include\Expression\ExpressionTree.h">
       <Filter>헤더 파일\Expression</Filter>
     </ClInclude>
-    <ClInclude Include="InterfaceQueue.h">
+    <ClInclude Include="include\Interfaces\InterfaceQueue.h">
       <Filter>헤더 파일\Interfaces</Filter>
     </ClInclude>
-    <ClInclude Include="InterfaceStack.h">
+    <ClInclude Include="include\Interfaces\InterfaceStack.h">
       <Filter>헤더 파일\Interfaces</Filter>
     </ClInclude>
-    <ClInclude Include="ArrayQueue.h">
+    <ClInclude Include="include\Structures\ArrayQueue.h">
       <Filter>헤더 파일\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="ArrayStack.h">
+    <ClInclude Include="include\Structures\ArrayStack.h">
       <Filter>헤더 파일\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedListQueue.h">
+    <ClInclude Include="include\Structures\LinkedListQueue.h">
       <Filter>헤더 파일\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedListStack.h">
+    <ClInclude Include="include\Structures\LinkedListStack.h">
       <Filter>헤더 파일\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
+    <ClInclude Include="include\Structures\Node.h">
       <Filter>헤더 파일\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="Queue.h">
+    <ClInclude Include="include\Structures\Queue.h">
       <Filter>헤더 파일\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="Stack.h">
+    <ClInclude Include="include\Structures\Stack.h">
       <Filter>헤더 파일\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="test.h">
+    <ClInclude Include="test\test.h">
       <Filter>헤더 파일\Test</Filter>
     </ClInclude>
   </ItemGroup>

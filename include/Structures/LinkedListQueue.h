@@ -1,5 +1,5 @@
 #pragma once
-#include "InterfaceQueue.h"
+#include "Interfaces/InterfaceQueue.h"
 #include "Node.h"
 
 class LinkedListQueue : public InterfaceQueue

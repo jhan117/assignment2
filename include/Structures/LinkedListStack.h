@@ -1,5 +1,5 @@
 #pragma once
-#include "InterfaceStack.h"
+#include "Interfaces/InterfaceStack.h"
 #include "Node.h"
 
 class LinkedListStack : public InterfaceStack

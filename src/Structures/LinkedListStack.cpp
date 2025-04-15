@@ -1,4 +1,4 @@
-#include "LinkedListStack.h"
+#include "Structures/LinkedListStack.h"
 using namespace std;
 
 // 持失切, 社瑚切

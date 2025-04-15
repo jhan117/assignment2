@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-#include "InterfaceQueue.h"
-#include "InterfaceStack.h"
+#include "Interfaces/InterfaceQueue.h"
+#include "Interfaces/InterfaceStack.h"
 
 int tokenize(const std::string expr, InterfaceQueue* tokens);
 int precedence(std::string op);

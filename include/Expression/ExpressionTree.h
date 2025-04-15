@@ -1,6 +1,6 @@
 #pragma once
-#include "InterfaceQueue.h"
-#include "InterfaceStack.h"
+#include "Interfaces/InterfaceQueue.h"
+#include "Interfaces/InterfaceStack.h"
 #include "ExpressionParser.h"
 
 class ExpressionTree

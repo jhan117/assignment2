@@ -19,32 +19,32 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ArrayQueue.cpp" />
-    <ClCompile Include="ArrayStack.cpp" />
-    <ClCompile Include="ExpressionEvaluator.cpp" />
-    <ClCompile Include="ExpressionParser.cpp" />
-    <ClCompile Include="ExpressionTree.cpp" />
-    <ClCompile Include="LinkedListQueue.cpp" />
-    <ClCompile Include="LinkedListStack.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="test_eval_postfix.cpp" />
-    <ClCompile Include="test_eval_prefix.cpp" />
+    <ClCompile Include="src\Expression\ExpressionEvaluator.cpp" />
+    <ClCompile Include="src\Expression\ExpressionParser.cpp" />
+    <ClCompile Include="src\Expression\ExpressionTree.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Structures\ArrayQueue.cpp" />
+    <ClCompile Include="src\Structures\ArrayStack.cpp" />
+    <ClCompile Include="src\Structures\LinkedListQueue.cpp" />
+    <ClCompile Include="src\Structures\LinkedListStack.cpp" />
+    <ClCompile Include="test\test_eval_postfix.cpp" />
+    <ClCompile Include="test\test_eval_prefix.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArrayQueue.h" />
-    <ClInclude Include="ArrayStack.h" />
-    <ClInclude Include="Expression.h" />
-    <ClInclude Include="ExpressionEvaluator.h" />
-    <ClInclude Include="ExpressionParser.h" />
-    <ClInclude Include="ExpressionTree.h" />
-    <ClInclude Include="InterfaceQueue.h" />
-    <ClInclude Include="InterfaceStack.h" />
-    <ClInclude Include="LinkedListQueue.h" />
-    <ClInclude Include="LinkedListStack.h" />
-    <ClInclude Include="Node.h" />
-    <ClInclude Include="Queue.h" />
-    <ClInclude Include="Stack.h" />
-    <ClInclude Include="test.h" />
+    <ClInclude Include="include\Expression\Expression.h" />
+    <ClInclude Include="include\Expression\ExpressionEvaluator.h" />
+    <ClInclude Include="include\Expression\ExpressionParser.h" />
+    <ClInclude Include="include\Expression\ExpressionTree.h" />
+    <ClInclude Include="include\Interfaces\InterfaceQueue.h" />
+    <ClInclude Include="include\Interfaces\InterfaceStack.h" />
+    <ClInclude Include="include\Structures\ArrayQueue.h" />
+    <ClInclude Include="include\Structures\ArrayStack.h" />
+    <ClInclude Include="include\Structures\LinkedListQueue.h" />
+    <ClInclude Include="include\Structures\LinkedListStack.h" />
+    <ClInclude Include="include\Structures\Node.h" />
+    <ClInclude Include="include\Structures\Queue.h" />
+    <ClInclude Include="include\Structures\Stack.h" />
+    <ClInclude Include="test\test.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -132,6 +132,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include\;$(ProjectDir)src\;$(ProjectDir)test\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

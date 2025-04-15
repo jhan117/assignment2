@@ -1,8 +1,8 @@
 #pragma once
-#include "ExpressionParser.h"
-#include "Stack.h"
-#include "Queue.h"
-#include "Expression.h"
+#include "Expression/ExpressionParser.h"
+#include "Structures/Stack.h"
+#include "Structures/Queue.h"
+#include "Expression/Expression.h"
 #include<string>
 #include <chrono>
 
